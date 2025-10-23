@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}Animales Exóticos{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center">Animales Exóticos</h1>
+
+  <section class="mt-4">
+    <h2>Acuáticos</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="{{ url_for('static', filename='img/img de ajolote.webp') }}" class="card-img-top img-fluid" alt="Ajolote">
+          <div class="card-body">
+            <h5 class="card-title">Ajolote</h5>
+            <p class="card-text">Ambystoma mexicanum — anfibio endémico de México, conocido por su capacidad de regeneración.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><strong>Hábitat:</strong> lagos y canales de Xochimilco.</li>
+              <li><strong>Dieta:</strong> invertebrados acuáticos, pequeños peces y larvas.</li>
+              <li><strong>Tamaño:</strong> 15–30 cm (aprox.).</li>
+              <li><strong>Estado:</strong> en peligro crítico por pérdida de hábitat y contaminación.</li>
+              <li><strong>Dato curioso:</strong> mantiene rasgos larvales durante toda su vida (neotenia).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="{{ url_for('static', filename='img/img de Cangrejo.jpg') }}" class="card-img-top img-fluid" alt="Cangrejo yeti">
+          <div class="card-body">
+            <h5 class="card-title">Cangrejo "Yeti"</h5>
+            <p class="card-text">Crustáceo de aguas profundas asociado a chimeneas hidrotermales, con filamentos en sus pinzas.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><strong>Hábitat:</strong> fondos marinos, cerca de fuentes hidrotermales.</li>
+              <li><strong>Dieta:</strong> bacterias quimiosintéticas, detritos.</li>
+              <li><strong>Tamaño:</strong> variable según la especie (pocos cm a decenas cm).</li>
+              <li><strong>Estado:</strong> poco estudiado; muchas especies recientemente descubiertas.</li>
+              <li><strong>Dato curioso:</strong> sus "pelos" hospedan bacterias que pueden ser su fuente de alimento.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5">
+    <h2>Aéreos</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="{{ url_for('static', filename='img/img de guacamaya roja.jpg') }}" class="card-img-top img-fluid" alt="Guacamaya roja">
+          <div class="card-body">
+            <h5 class="card-title">Guacamaya roja</h5>
+            <p class="card-text">Ave tropical de plumaje brillante, típica de selvas húmedas de Centro y Sudamérica.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><strong>Hábitat:</strong> selvas y bosques tropicales.</li>
+              <li><strong>Dieta:</strong> frutos, semillas, nueces y ocasionalmente insectos.</li>
+              <li><strong>Tamaño:</strong> 80–100 cm (envergadura incluida).</li>
+              <li><strong>Estado:</strong> vulnerable en muchas regiones por deforestación y comercio ilegal.</li>
+              <li><strong>Dato curioso:</strong> forman parejas monógamas y son aves muy sociales.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="{{ url_for('static', filename='img/img de periquitos dorados.jpg') }}" class="card-img-top img-fluid" alt="Periquito dorado">
+          <div class="card-body">
+            <h5 class="card-title">Periquito dorado</h5>
+            <p class="card-text">Pequeña ave colorida, frecuente en cautiverio y también encontrada en áreas selváticas.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><strong>Hábitat:</strong> bosques y áreas abiertas con árboles.</li>
+              <li><strong>Dieta:</strong> semillas, frutas y vegetación.</li>
+              <li><strong>Tamaño:</strong> 10–20 cm.</li>
+              <li><strong>Estado:</strong> variable según especie; muchas adaptables al cautiverio.</li>
+              <li><strong>Dato curioso:</strong> pueden imitar sonidos y aprender palabras simples.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5">
+    <h2>Terrestres</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="{{ url_for('static', filename='img/imagen de zorro.jpg') }}" class="card-img-top img-fluid" alt="Zorro de las nieves">
+          <div class="card-body">
+            <h5 class="card-title">Zorro de las nieves</h5>
+            <p class="card-text">Zorro adaptado a climas fríos, con pelaje blanco en invierno que le sirve de camuflaje.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><strong>Hábitat:</strong> tundra y zonas árticas.</li>
+              <li><strong>Dieta:</strong> pequeños mamíferos, aves, insectos y carroña.</li>
+              <li><strong>Tamaño:</strong> 46–68 cm (sin contar la cola).</li>
+              <li><strong>Estado:</strong> generalmente estable, pero sensible al cambio climático.</li>
+              <li><strong>Dato curioso:</strong> su pelaje cambia de color según la estación para camuflarse.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="{{ url_for('static', filename='img/mono titi.jpg') }}" class="card-img-top img-fluid" alt="Mono tití">
+          <div class="card-body">
+            <h5 class="card-title">Mono tití</h5>
+            <p class="card-text">Pequeño primate de Sudamérica, conocido por su tamaño reducido y comportamiento social.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><strong>Hábitat:</strong> bosques tropicales y selvas.</li>
+              <li><strong>Dieta:</strong> frutas, insectos y pequeños vertebrados.</li>
+              <li><strong>Tamaño:</strong> 20–30 cm (cuerpo).</li>
+              <li><strong>Estado:</strong> algunas especies amenazadas por pérdida de hábitat.</li>
+              <li><strong>Dato curioso:</strong> muchas especies viven en grupos familiares y usan vocalizaciones complejas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

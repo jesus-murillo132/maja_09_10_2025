@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}Las 7 Maravillas{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center mb-4">Las 7 maravillas del mundo</h1>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de la gran muralla china.jpg') }}" class="card-img-top img-fluid" alt="Gran Muralla China">
+        <div class="card-body">
+          <h5 class="card-title">Gran Muralla China</h5>
+          <p class="card-text">
+            La Gran Muralla es una extensa fortificación construida para proteger territorios. Recorre montañas y valles a lo largo de miles de kilómetros.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> China (prov. Hebei, Pekín, Shanxi, entre otras)</li>
+            <li><strong>Construcción:</strong> varios tramos entre los siglos V a. C. y XVII</li>
+            <li><strong>Recomendado:</strong> visitar tramos cercanos a Pekín (Badaling, Mutianyu) por accesibilidad</li>
+            <li><strong>Dato curioso:</strong> no es una sola muralla continua, sino tramos construidos en distintas épocas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de petra.jpg') }}" class="card-img-top img-fluid" alt="Petra">
+        <div class="card-body">
+          <h5 class="card-title">Petra</h5>
+          <p class="card-text">
+            Ciudad nabatea tallada en la roca, famosa por su fachada principal (Al-Khazneh) y su integración con el paisaje desértico.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> Jordania (Wadi Musa)</li>
+            <li><strong>Periodo:</strong> floreció entre los siglos IV a. C. y II d. C.</li>
+            <li><strong>Recomendado:</strong> recorrer el Siq temprano para evitar multitudes y el calor</li>
+            <li><strong>Dato curioso:</strong> muchas fachadas están talladas directamente en acantilados de arenisca rosa</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de el coliseo.jpg') }}" class="card-img-top img-fluid" alt="Coliseo">
+        <div class="card-body">
+          <h5 class="card-title">Coliseo</h5>
+          <p class="card-text">
+            Anfiteatro monumental de la antigua Roma, sede de espectáculos públicos y símbolo del ingenio arquitectónico romano.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> Roma, Italia</li>
+            <li><strong>Construcción:</strong> inaugurado en el siglo I d. C. (aprox. 80 d. C.)</li>
+            <li><strong>Recomendado:</strong> visitar con guía para entender su historia y el sistema de graderíos</li>
+            <li><strong>Dato curioso:</strong> originalmente podía albergar decenas de miles de espectadores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de machu picchu.jpg') }}" class="card-img-top img-fluid" alt="Machu Picchu">
+        <div class="card-body">
+          <h5 class="card-title">Machu Picchu</h5>
+          <p class="card-text">
+            Ciudadela inca ubicada en una cresta andina, conocida por su arquitectura de piedra y sus terrazas agrícolas.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> Perú (región Cusco)</li>
+            <li><strong>Periodo:</strong> siglo XV (época inca)</li>
+            <li><strong>Recomendado:</strong> llegar temprano para ver la niebla matutina y evitar la hora punta</li>
+            <li><strong>Dato curioso:</strong> su propósito exacto aún se debate; pudo ser un santuario o residencia real</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de chichen itza.jpg') }}" class="card-img-top img-fluid" alt="Chichén Itzá">
+        <div class="card-body">
+          <h5 class="card-title">Chichén Itzá</h5>
+          <p class="card-text">
+            Centro ceremonial maya con la famosa pirámide de Kukulkán, que refleja conocimientos astronómicos en su diseño.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> Yucatán, México</li>
+            <li><strong>Periodo:</strong> auge entre los siglos VIII y XII</li>
+            <li><strong>Recomendado:</strong> visitar en horario temprano o tarde para evitar calor y multitudes</li>
+            <li><strong>Dato curioso:</strong> durante los equinoccios se forman sombras que simulan una serpiente descendiendo por la pirámide</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de el taj mahal.jpg') }}" class="card-img-top img-fluid" alt="Taj Mahal">
+        <div class="card-body">
+          <h5 class="card-title">Taj Mahal</h5>
+          <p class="card-text">
+            Mausoleo de mármol blanco construido como símbolo de amor, con jardines y simetría perfecta.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> Agra, India</li>
+            <li><strong>Construcción:</strong> siglo XVII (construido por el emperador Shah Jahan)</li>
+            <li><strong>Recomendado:</strong> ver al amanecer para colores y luz más suaves</li>
+            <li><strong>Dato curioso:</strong> el mármol cambia ligeramente de color según la luz del día</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de la estatua de cristo redentor.jpg') }}" class="card-img-top img-fluid" alt="Cristo Redentor">
+        <div class="card-body">
+          <h5 class="card-title">Cristo Redentor</h5>
+          <p class="card-text">
+            Estatua monumental de Jesucristo que domina la ciudad de Río de Janeiro, símbolo cultural y religioso de Brasil.
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Ubicación:</strong> Río de Janeiro, Brasil (cerro del Corcovado)</li>
+            <li><strong>Construcción:</strong> inaugurada en 1931</li>
+            <li><strong>Recomendado:</strong> combinar la visita con miradores para ver la bahía y la ciudad</li>
+            <li><strong>Dato curioso:</strong> la estatua mide 30 metros de altura, sin contar su pedestal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

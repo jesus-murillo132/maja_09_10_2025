@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}Autos Antiguos{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center text-white">Autos Antiguos</h1>
+
+  <div class="row g-4 mt-3">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de ford model t.jpg') }}" class="card-img-top img-fluid" alt="Ford Model T">
+        <div class="card-body">
+          <h5 class="card-title">Ford Model T</h5>
+          <p class="card-text">El Ford Model T, también conocido como "Tin Lizzie", fue un automóvil producido por la Ford Motor Company desde 1908 hasta 1927. Fue el primer automóvil asequible para la clase media, gracias a la producción en masa.</p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Años de producción:</strong> 1908 – 1927</li>
+            <li><strong>Origen:</strong> Estados Unidos</li>
+            <li><strong>Motor típico:</strong> 4 cilindros, ~2.9 L</li>
+            <li><strong>Importancia:</strong> popularizó la movilidad personal y la producción en cadena.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de Chevrolet Bel Air.jpg') }}" class="card-img-top img-fluid" alt="Chevrolet Bel Air">
+        <div class="card-body">
+          <h5 class="card-title">Chevrolet Bel Air</h5>
+          <p class="card-text">Clásico americano de los años 50, símbolo del diseño y la cultura automotriz de la posguerra.</p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Años icónicos:</strong> 1950s</li>
+            <li><strong>Origen:</strong> Estados Unidos</li>
+            <li><strong>Características:</strong> carrocería cromada, diseño elegante y opciones de motor V8 en modelos posteriores</li>
+            <li><strong>Por qué es famoso:</strong> icono del diseño de los años 50 y cultura pop.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de volkswagen escarabajo.jpg') }}" class="card-img-top img-fluid" alt="Volkswagen Escarabajo">
+        <div class="card-body">
+          <h5 class="card-title">Volkswagen Escarabajo</h5>
+          <p class="card-text">Automóvil compacto diseñado antes de la Segunda Guerra Mundial y producido en masa durante décadas; conocido por su forma redondeada.</p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Años de producción:</strong> 1938 – 2003</li>
+            <li><strong>Origen:</strong> Alemania</li>
+            <li><strong>Motor:</strong> motor trasero refrigerado por aire (flat-4)</li>
+            <li><strong>Curiosidad:</strong> uno de los modelos más producidos en la historia automotriz.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-3">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de cadillac eldorado.jpg') }}" class="card-img-top img-fluid" alt="Cadillac Eldorado">
+        <div class="card-body">
+          <h5 class="card-title">Cadillac Eldorado</h5>
+          <p class="card-text">Automóvil de lujo estadounidense conocido por su estilo y tecnología de su época.</p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Primera aparición:</strong> 1953 (como modelo independiente)</li>
+            <li><strong>Origen:</strong> Estados Unidos</li>
+            <li><strong>Características:</strong> acabados de lujo, opciones V8 y detalles de diseño exclusivos</li>
+            <li><strong>Actualidad:</strong> muy valorado por coleccionistas y restauradores.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="{{ url_for('static', filename='img/img de buick roadmaster.jpg') }}" class="card-img-top img-fluid" alt="Buick Roadmaster">
+        <div class="card-body">
+          <h5 class="card-title">Buick Roadmaster</h5>
+          <p class="card-text">Vehículo de lujo y gran tamaño, apreciado por su comodidad y presencia en carretera.</p>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Época destacada:</strong> décadas de 1940–1950</li>
+            <li><strong>Origen:</strong> Estados Unidos</li>
+            <li><strong>Motor:</strong> grandes V8 en las versiones de lujo</li>
+            <li><strong>Por qué interesa:</strong> ejemplo de lujo americano clásico y técnicas de fabricación de la época.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Mi sitio{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-white">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand" href="{{ url_for('inicio') }}">Mi Sitio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('inicio') }}">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('animales_exoticos') }}">Animales exóticos</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('autos_antiguos') }}">Vehículos</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('maravillas') }}">Las Maravillas</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('acerca_de') }}">Acerca de</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url_for('inicio_de_sesion') }}">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="text-end container pb-4 text-secondary">
+  Creado por: {{ creador }}
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
